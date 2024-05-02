@@ -11,7 +11,7 @@
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST" AND isset($_SESSION['logged_in']) AND $_SESSION['logged_in'] == 1)
 	{
-		if(isset($_POST['comment']) AND $_POST['comment'] != "")
+		if(isset($_POST['comment']) AND $_POST['comment'] != "")  saurabh
 		{
 			$sql = "SELECT * FROM blogdata ORDER BY blogId DESC";
 			$result = mysqli_query($conn, $sql);
